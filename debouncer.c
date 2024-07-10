@@ -60,6 +60,7 @@ void debouncer_add_button(debouncer_button_t *Button){
 	}
 	Button->_intern.u8DownVal = DEBOUNCER_BUTTONS_HIST_DOWN_VAL;
 	Button->_intern.u8UpperVal = DEBOUNCER_BUTTONS_HIST_UPPER_VAL;
+	Button->_intern.nextButton = NULL;
 	_add_button(Button);
 }
 
